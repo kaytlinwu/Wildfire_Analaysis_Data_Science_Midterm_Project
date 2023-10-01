@@ -10,21 +10,21 @@ Forest fire data from Montesinho Natural Park, Portugal was selected for this pr
 
 The danger rating of a wildfire is measured by the Fire Weather Index (FWI) system. The Fire Weather Index (FWI) is composed of 6 components that describe fuel moisture and weather conditions. These components account for fire behaviour. The fuel moisture codes are numeric ratings that describe the moisture content of the forest floor and dead organic matter. The higher the value, the lower the moisture content. Each fuel moisture code accounts for different layers of the forest floor in the following order: 
 
- 1- Fine Fuel Moisture Code (FFMC): (Top Layer) A numeric rating of surface level fuel moisture, taking into account loose non-living organic debris, leaves, bark, twigs, flowers, fruits, and other vegetable matter.
- 2 -Duff Moisture Code (DMC): (Middle Layer)  A numeric rating of the fuel moisture of decomposed organic material beneath the surface level. 
+ 1- Fine Fuel Moisture Code (FFMC): (Top Layer) A numeric rating of surface level fuel moisture, taking into account loose non-living organic debris, leaves, bark, twigs, flowers, fruits, and other vegetable matter. <br>
+ 2 -Duff Moisture Code (DMC): (Middle Layer)  A numeric rating of the fuel moisture of decomposed organic material beneath the surface level. <br>
  3- Drought Code (DC): (Deep Layer) A numeric rating of the fuel moisture of deep, compact organic layers. 
 
 The remaining 3 components help describe the behaviour a fire. As the fire danger increases, these components also increase. 
 
- 4 - Initial Spread Index (ISI): Numeric rating of the expected rate of fire spread derived from Fine Fuel Moisture Code (FFMC) and wind speed. 
- 5 - Build Up Index (BUI): Numeric rating of the total amount of available combustable fuel. This is calculated by adding the Duff Moisture Code (DMC) and Drought Code (DC). 
+ 4 - Initial Spread Index (ISI): Numeric rating of the expected rate of fire spread derived from Fine Fuel Moisture Code (FFMC) and wind speed. <br> 
+ 5 - Build Up Index (BUI): Numeric rating of the total amount of available combustable fuel. This is calculated by adding the Duff Moisture Code (DMC) and Drought Code (DC). <br> 
  6 - Fire Weather Index (FWI): Numeric rating of fire intensity. Derived from Initial Spreed Index (ISI) and Build Up Index (BUI). 
 
 
 ## Project/Goals
  * Can we find any variables within the data to predict a consequential properities of fires like size, danger and frequency?
- * Which fire indexes provides the greatest indicator to assess for the total area burned by a fire and ISI (initial spread index)?
- * Create a model predict the ISI (Initial Spread Index) of a fire. 
+ * Which fire indexes provides the greatest indicator to assess for the total area burned by a fire and initial spread index (ISI)?
+ * Create a model predict the Initial Spread Index (ISI) of a fire. 
 
 ## Process
 Forest fire analysis was perfromed using forest fire data from Montesinho Natural Park, Portugal:
@@ -32,9 +32,9 @@ Forest fire analysis was perfromed using forest fire data from Montesinho Natura
     * Duplicated values, null values, and outliers were removed.
 * Exploratory Data Analysis & Visualization
     * Correlations between fire indexes were explored.
-    * Analysis of variables against ISI and area burned were performed. 
+    * Analysis of variables against Initial Spread Index (ISI) and area burned were performed. 
 * Data Modelling
-    * DC and month number were used to predict ISI value.
+    * Drought Code (DC) and month number were used to predict Initial Spread Index (ISI) value.
 
 ## Results
 
@@ -50,7 +50,7 @@ Forest fire analysis was perfromed using forest fire data from Montesinho Natura
 A multilinear regression was made to help model the data from Montesinho Natural Park wildfires. 
 
 The final model was found to be: 
-* ISI = (-0.000428*DC) + (1.167389*month number) 
+* ISI = (-0.000428 * DC) + (1.167389 * month number) 
 This model was able to explain 78% of the variance of ISI using DC and month number as the x variables. 
 
 ## Challenges 
