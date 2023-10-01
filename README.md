@@ -33,13 +33,13 @@ Forest fire analysis was perfromed using forest fire data from Montesinho Natura
 * Exploratory Data Analysis & Visualization
     * Correlations between fire indexes were explored.
     * Analysis of variables against Initial Spread Index (ISI) and area burned were performed. 
-* Data Modelling
+* Data Modelling 
     * Drought Code (DC) and month number were used to predict Initial Spread Index (ISI) value.
 
 ## Results
 
 * Fine Fuel Moisture Code (FFMC) was skewed towards it's theorical max of 99, which implies that a high Fine Fuel Moisture Code (FFMC) is either a precondition for a fire of any size, or that high Fine Fuel Moisture Code (FFMC) is a common property of the local climate, reglardless of fire risk. 
-* Highest number of fires were in August and September. The smallest number of fires was in November. 
+* The highest number of fires were in August and September. The smallest number of fires was in November. 
 * The likelyhood for a fire to spread is higher in August and September compared to March
 * The average (Initial Spread Index) ISI per season followed a seasonal pattern. The Initial Spread Inded (ISI) was highest during summer with the highest temperatures, slightly decreases in Fall and is the lowest in the Winter. By Spring, the Initial Spread Index (ISI) increases as the temperature increases.
 * Seasons containing higher average wildfire Initial Spread Indexes (ISI) had an increased number of high and extreme danger fires. These fires are important to note because they are difficult to control. 
@@ -50,13 +50,13 @@ Forest fire analysis was perfromed using forest fire data from Montesinho Natura
 A multilinear regression was made to help model the data from Montesinho Natural Park wildfires. 
 
 The final model was found to be: 
-* ISI = (-0.000428 * DC) + (1.167389 * month number) 
+* ISI = (-0.000428 * DC) + (1.167389 * month number) <br>
 This model was able to explain 78% of the variance of ISI using DC and month number as the x variables. 
 
 ## Challenges 
 * The data set did not include important fire parameters such as FWI (Fire Weather Index) and BUI (Build Up Index) which provide the risk rating of a wildfire.
 * Data pertaining to the area burned was highly skewed towards 0. This may be because the area was in hectares and that the area burned of the fire was minimal/small and did not spread.
-* Number of fires represented in colder months such as November, December and January was small compared to the dataset. May not be an accurate reflection of fires that occur during that month. 
+* The number of fires represented in colder months such as November, December and January was small compared to the dataset. May not be an accurate reflection of fires that occur during that month. 
 * Data provided the month but not the year. Difficult to ascertain whether or not a yearly trend was present.
 * The fire weather indexes for days without fires was not included in the dataset. This reduced the ability to find causality between indexes and fires
 
