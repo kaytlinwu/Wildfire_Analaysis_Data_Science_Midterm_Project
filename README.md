@@ -14,20 +14,20 @@ The danger rating of a wildfire is measured by the Fire Weather Index (FWI) syst
  2 -Duff Moisture Code (DMC): (Middle Layer)  A numeric rating of the fuel moisture of decomposed organic material beneath the surface level. <br>
  3- Drought Code (DC): (Deep Layer) A numeric rating of the fuel moisture of deep, compact organic layers. 
 
-The remaining 3 components help describe the behaviour a fire. As the fire danger increases, these components also increase. 
+The remaining 3 components help describe the behaviour of a fire. As the fire danger increases, these components also increase. 
 
  4 - Initial Spread Index (ISI): Numeric rating of the expected rate of fire spread derived from Fine Fuel Moisture Code (FFMC) and wind speed. <br> 
- 5 - Build Up Index (BUI): Numeric rating of the total amount of available combustable fuel. This is calculated by adding the Duff Moisture Code (DMC) and Drought Code (DC). <br> 
- 6 - Fire Weather Index (FWI): Numeric rating of fire intensity. Derived from Initial Spreed Index (ISI) and Build Up Index (BUI). 
+ 5 - Build Up Index (BUI): Numeric rating of the total amount of available combustible fuel. This is calculated by adding the Duff Moisture Code (DMC) and Drought Code (DC). <br> 
+ 6 - Fire Weather Index (FWI): Numeric rating of fire intensity. Derived from Initial Spread Index (ISI) and Build Up Index (BUI). 
 
 
 ## Project/Goals
- * Can we find any variables within the data to predict a consequential properities of fires like size, danger and frequency?
+ * Can we find any variables within the data to predict consequential properties of fires like size, danger and frequency?
  * Which fire indexes provides the greatest indicator to assess for the total area burned by a fire and initial spread index (ISI)?
- * Create a model predict the Initial Spread Index (ISI) of a fire. 
+ * Create a model to predict the Initial Spread Index (ISI) of a fire 
 
 ## Process
-Forest fire analysis was perfromed using forest fire data from Montesinho Natural Park, Portugal:
+Forest fire analysis was performed using forest fire data from Montesinho Natural Park, Portugal:
 * Data Cleaning
     * Duplicated values, null values, and outliers were removed.
 * Exploratory Data Analysis & Visualization
@@ -38,9 +38,9 @@ Forest fire analysis was perfromed using forest fire data from Montesinho Natura
 
 ## Results
 
-* Fine Fuel Moisture Code (FFMC) was skewed towards it's theorical max of 99, which implies that a high Fine Fuel Moisture Code (FFMC) is either a precondition for a fire of any size, or that high Fine Fuel Moisture Code (FFMC) is a common property of the local climate, reglardless of fire risk. 
-* The highest number of fires were in August and September. The smallest number of fires was in November. 
-* The likelyhood for a fire to spread is higher in August and September compared to March
+* Fine Fuel Moisture Code (FFMC) was skewed towards its theoretical of 99, which implies that a high Fine Fuel Moisture Code (FFMC) is either a precondition for a fire of any size, or that high Fine Fuel Moisture Code (FFMC) is a common property of the local climate, regardless  of fire risk. 
+* Highest number of fires were in August and September. The smallest number of fires was in November. 
+* The likelihood for a fire to spread is higher in August and September compared to March
 * The average (Initial Spread Index) ISI per season followed a seasonal pattern. The Initial Spread Inded (ISI) was highest during summer with the highest temperatures, slightly decreases in Fall and is the lowest in the Winter. By Spring, the Initial Spread Index (ISI) increases as the temperature increases.
 * Seasons containing higher average wildfire Initial Spread Indexes (ISI) had an increased number of high and extreme danger fires. These fires are important to note because they are difficult to control. 
 * The average Drought Code (DC) also followed the same seasonal pattern as Initial Spread Index (ISI). The Drought Code (DC) was found highest in August and September (Summer) and lowest during the winter (December). 
