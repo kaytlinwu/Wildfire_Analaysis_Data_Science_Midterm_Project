@@ -22,7 +22,7 @@ The remaining 3 components help describe the behaviour a fire. As the fire dange
 
 
 ## Project/Goals
-
+ * Can we find any variables within the data to predict a consequential properities of fires like size, danger and frequency?
  * Which fire indexes provides the greatest indicator to assess for the total area burned by a fire and ISI (initial spread index)?
  * Create a model predict the ISI (Initial Spread Index) of a fire. 
 
@@ -38,8 +38,10 @@ Forest fire analysis was perfromed using forest fire data from Montesinho Natura
 ## Results
 
 * The average ISI per season followed a seasonal pattern. The ISI was highest during summer with the highest temperatures, slightly decreases in Fall and is the lowest in the Winter. By Spring, the ISI increases as the temperature increases.
-* Seasons containing higher average wildfire ISI had an increased number of high and extreme danger fires. These fires are important to note because they are difficult to control. 
+* Seasons containing higher average wildfire ISI had an increased number of high and extreme danger fires. These fires are important to note because they are difficult to control. If we can predict the an would be ISI when we know the drought conditions in a given month, this may help assess the danger of a fire becoming uncontrolable. 
 * Average DC also followed the same seasonal pattern as ISI. DC was found highest in August and September (Summer) and lowest during the winter (December). 
+* FFMC was skewed towards it's theorical max of 99, which implies that a high FFMC is either a precondition for a fire of any size, or that high FFMC is a common property of the local climate, reglardless of fire risk. 
+* The likelyhood for a fire to spread is higher in the September and August compared to March
 
 # The Model
 A multilinear regression was made to help model the data from Montesinho Natural Park wildfires. 
@@ -52,6 +54,7 @@ This model was able to explain 78% of the variance of ISI using DC and month num
 The data set did not include important fire parameters such as FWI and BUI which provide the risk rating of a fire.
 Data pertaining to the area burned was highly skewed towards 0. This may be because the area was in hectares and that the area burned of the fire was minimal/small and did not spread.
 Data provided the month but not the year. Had to tell if there was a trend per year.
+Not knowing the fire wether indexes for days when there was no fire reduced the ability to find causality between indexes and fires
 
 
 ## Future Goals
